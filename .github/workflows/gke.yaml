@@ -3,7 +3,7 @@ name: Apply Kubernetes YAML
 on:
   push:
     branches:
-      - master
+      - main
 
 
 env:
