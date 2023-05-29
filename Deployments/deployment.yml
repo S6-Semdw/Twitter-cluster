@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twitterclone
+  labels:
+    app: twitterclone
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: twitterclone
+  template:
+    metadata:
+      labels:
+        app: twitterclone
+    spec:
+      containers:
+      - name: twitteruserservice
+        image: semm12/twitteruserservice:latest
+        ports:
+          - containerPort: 3000
