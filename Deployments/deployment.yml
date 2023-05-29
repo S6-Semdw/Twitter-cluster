@@ -19,7 +19,7 @@ spec:
         image: semm12/twitteruserservice:latest
         ports:
           - containerPort: 8090
-      - name: Api-gateway
+      - name: api-gateway
         image: semm12/twitterapigateway:latest
         ports:
           - containerPort: 8080
