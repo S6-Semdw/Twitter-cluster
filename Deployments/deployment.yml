@@ -20,3 +20,13 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: 8090
+      - name: twittertweetservice
+        image: semm12/twittertweetservice
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8082
+      - name: twitterauthservice
+        image: semm12/twitterauthservice
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8091
