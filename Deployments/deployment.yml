@@ -17,9 +17,11 @@ spec:
       containers:
       - name: twitteruserservice
         image: semm12/twitteruserservice:latest
+        imagePullPolicy: Always
         ports:
           - containerPort: 8090
       - name: api-gateway
         image: semm12/twitterapigateway:latest
+        imagePullPolicy: Always
         ports:
           - containerPort: 8080
