@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: twitteruserservice
-        image: semm12/twitteruserservice:latest
+        image: semm12/twitteruserv2
         imagePullPolicy: Always
         ports:
           - containerPort: 8090
